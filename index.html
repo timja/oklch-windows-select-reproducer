@@ -1,0 +1,28 @@
+<html>
+    <style>
+        :root {
+            --background: oklch(from var(--white) 0.175 0.013 h);
+            --accent-color: oklch(65.13% 0.1987 265);
+            --white: oklch(from var(--accent-color) 98% 0.015 h);
+            --text-color-secondary: oklch(from var(--white) 0.7 0.038 h);
+            --text-color: var(--white);
+        }
+
+        body {
+            background-color: var(--background);
+        }
+
+        input, select {
+            background-color: oklch(from var(--text-color-secondary) l c h / 0.04);
+            color: var(--text-color);
+        }
+    </style>
+    <body>
+        <input />
+
+        <select>
+            <option>hello</option>
+            <option>hello world</option>
+        </select>
+    </body>
+</html>
