@@ -8,12 +8,17 @@
             --text-color: var(--white);
         }
 
+        html {
+            color-scheme: dark;
+        }
+
         body {
             background-color: var(--background);
         }
 
         input, select {
-            background-color: oklch(from var(--text-color-secondary) l c h / 0.04);
+            appearance: none;
+            background-color: oklch(from oklch(from oklch(from oklch(65.13% 0.1987 265) 98% 0.015 h) 0.7 0.038 h) l c h / 0.04);
             color: var(--text-color);
         }
     </style>
@@ -23,6 +28,10 @@
         <select>
             <option>hello</option>
             <option>hello world</option>
+            <option>hello world2</option>
+            <option>hello world3</option>
+            <option>hello world4</option>
         </select>
+
     </body>
 </html>
